@@ -1,5 +1,5 @@
-//ex1
-//Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
+// //ex1
+// //Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
 
 const areaRectangle = function(l1,l2){
      area = l1 * l2
@@ -7,8 +7,8 @@ const areaRectangle = function(l1,l2){
 };
 console.log(areaRectangle(4,7));
 
-//ex2
-//Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
+// //ex2
+// //Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 
 const crazySum = function(a,b){
 if (a===b){
@@ -21,12 +21,12 @@ if (a===b){
 }
 console.log(crazySum(4,4));
 
-//ex3
-//  Write a function "crazyDiff" that computes the 
-// absolute difference between a given number and 19. 
-// Returns triple their absolute difference if 
-// the specified
-// number is greater than 19.
+// //ex3
+// //  Write a function "crazyDiff" that computes the 
+// // absolute difference between a given number and 19. 
+// // Returns triple their absolute difference if 
+// // the specified
+// // number is greater than 19.
 
 
 const crazyDiff = function(a){
@@ -43,9 +43,9 @@ if(diff >19){
 console.log(crazyDiff(25));
 
 
-//ex4
-//Write a function "boundary" which 
-accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
+// //ex4
+// //Write a function "boundary" which 
+//accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
 const boundary = function(n){
     if(n>20 && n<=100 || n===400){
     console.log("It's true");
@@ -56,9 +56,9 @@ const boundary = function(n){
 }
 console.log(boundary(25));
 
-//ex 5
-//Write a function "strivify" which accepts a string S. Add to S "Strive"
-// in front of a given string, if the given string begins with "Strive" then return the original string.
+// //ex 5
+// //Write a function "strivify" which accepts a string S. Add to S "Strive"
+// // in front of a given string, if the given string begins with "Strive" then return the original string.
 
 const strivify = function(s){
     let string = "Strive";
@@ -74,9 +74,9 @@ const strivify = function(s){
 console.log(strivify());
 
 
-//ex6
-//Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
-//HINT: Module Operator
+// //ex6
+// //Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
+// //HINT: Module Operator
 
 const check3and7 = function(x) {
     if(x>0){
@@ -98,8 +98,8 @@ console.log(check3and7(78))
 
 
 
-//ex7
-//Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
+// //ex7
+// //Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
 const reverseString =function (s) {
      let myStr= "";
  for (var i = s.length - 1; i >= 0; i--) { 
@@ -110,8 +110,8 @@ const reverseString =function (s) {
 console.log(reverseString("Strive"));
 
 
-//ex8
-//Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
+// //ex8
+// //Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 
 
   
@@ -126,15 +126,35 @@ const upperFirst =function (str) {
 
 //ex9
 //Write a function "cutString" to create a new string without the first and last character of a given string
-const cutString = function (string){
-let splitString2 = string.split("");
-const array1 =[splitString2];
- array1.shift();
-
-return array1;
+ const cutString = function (string){
+let string1 = string.slice (1,string.length-1);
+return string1;
 }
 
-console.log(cutString("hello"))
+console.log(cutString("hello"));
+console.log(cutString("Yes"))
+console.log(cutString("Other"))
+
+/* EXERCISE 10
+Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
+*/
+
+
+const giveMeRandom =function(n) {
+     let x;  
+     let arry1=[];  
+    for (let i = 0; i <=n; i++) {
+         x = Math.floor((Math.random() * 11) + 0);  
+      arry1.push(x);
+}
+ return arry1;
+
+}
+console.log(giveMeRandom(8));
+console.log(giveMeRandom(15));
+
+
+
 
 
 
