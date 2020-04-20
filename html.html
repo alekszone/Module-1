@@ -28,15 +28,15 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
         }
       .h1 {
         color:seashell;
-        
+        font-size: 50px;
         margin: auto;
         text-align: center;
        }
      .p{
         color:seashell;
          text-align: left;
-         margin: auto;
-         font-size: 12px;
+         outline: 2px solid green;
+         text-size-adjust: 10px;
 
      }
      .p1{
@@ -57,9 +57,31 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
 .h2{
     
 text-align: center;
-font-size: 20px;
+font-size: 35px;
+color: honeydew;
 
 }
+.li {
+color: honeydew;
+outline: 2px white solid;
+width : 1000px;
+text-align: left;
+margin-left: 125px;
+}
+
+#email{
+text-align: center;
+outline: 2px yellow solid;
+border-top: 500px;
+
+}
+
+.table{
+margin-left: 250px;
+text-align: center;
+color : white;
+}
+
 
 
 
@@ -86,13 +108,7 @@ font-size: 20px;
             Write the main title of the barber shop and a smaller claim.
         -->
 <h1 class="h1"> Barber Aleks Shop</h1>
-<p class="p">The best Barber shop you will find in town.
-    Have you ever sat in a barber’s chair and wondered what it was like to be on the other
-     side? Do you walk past a red, white, and blue barber pole and think about what it would be like
-      work in a barbershop? Barbering isn’t your typical day job. It’s creative, it’s fast-paced, and
-       it makes your clients feel rock-solid awesome. If you’ve ever considered a career in barbering,
-        you’re not alone!
-</p>
+<p style="color: honeydew; text-align: center;">The best Barber shop you will find in town.</p>
 
 
 ​
@@ -101,31 +117,35 @@ font-size: 20px;
         -->
 
 <p1 class="p1"><img id="photo" src="photo.jpg"    ></p1>
-<p class="p" font-size="100px">
-    1. BARBERING IS NOT A NINE-TO-FIVE JOB
-    Does the idea of sitting at a desk all day stress you out? Do you cringe at the thought of clacking away at a 
-    computer or pushing paper around an office? Then barbering may be just the career for you. You work with clients
-     in a creative environment, and no two days in a barbershop are ever the same.<br>            
-   
-     2. YOU CAN EXPRESS YOUR FLAIR FOR CREATIVITY
-    The barbershop is a creative environment. There are always new styles and techniques to learn. 
-    You can even invent some yourself. Do you want to try a new fade? Work on your beard styling skills? 
-    Let your creative side shine!.<br>  
-    
-    3. BARBERS CAN BE SOCIAL
-    You won’t be stuck in a cubicle all by yourself. Making good conversation as a Barber is part of the job. 
-    It makes the time fly faster for both you and your clients, and it’s just great customer service. By getting 
-    to know your clients, you make yourself feel more like their friend than just someone they pay for a service. 
-    This means they’re more likely to come back to you, and not another barber..<br>  
-     
-    4. YOU HAVE FLEXIBILITY AS A BARBER
-    Many barbers are self-employed, which means they can set their own hours. Self-employed barbers also
-     handle their own marketing and set their own rates. If you work on commission, you won’t have as much 
-     flexibility with your time, but you also won’t have to worry about marketing or scheduling appointments—someone 
-     else will take care of that for you, so you have more time to focus on barbering..<br>  
-    
-       
-     </p>
+<h2 class="h2">Here are the top seven reasons why people flock to a Barbering career.</h2>
+<ol>
+<li class="li"><h4>1. BARBERING IS NOT A NINE-TO-FIVE JOB</h4>
+  Does the idea of sitting at a desk all day stress you out? Do you cringe at the thought 
+  of clacking away at a computer or pushing paper around an office? Then barbering may be just 
+  the career for you. You work with clients in a creative environment, and no two days in a 
+  barbershop are ever the same.
+</li>
+<li class="li"><h4>YOU CAN EXPRESS YOUR FLAIR FOR CREATIVITYB</h4>
+  The barbershop is a creative environment. There are always new styles and techniques to learn.
+   You can even invent some yourself. Do you want to try a new fade? Work on your beard styling skills? 
+   Let your creative side shine!
+</li>
+<li class="li"><h4>BARBERS CAN BE SOCIAL</h4>
+  You won’t be stuck in a cubicle all by yourself. Making good conversation as a Barber is part of the job. 
+  It makes the time fly faster for both you and your clients, and it’s just great customer service. By getting 
+  to know your clients, you make yourself feel more like their friend than just someone they pay for a service. 
+  This means they’re more likely to come back to you, and not another barber.
+</li>
+<li class="li"><h4> YOU HAVE FLEXIBILITY AS A BARBER</h4>
+  Many barbers are self-employed, which means they can set their own hours. Self-employed barbers also handle their
+   own marketing and set their own rates. If you work on commission, you won’t have as much flexibility with your time,
+    but you also won’t have to worry about marketing or scheduling appointments—someone else will take care of that 
+    for you, so you have more time to focus on barbering.
+</li>
+
+
+</ol>
+
 
 
 ​
@@ -133,8 +153,8 @@ font-size: 20px;
             Write a section with the address of the shop.
             [OPTIONAL] Link this address to Google Maps page.
         -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47940.431414313214!2d19.456468618371577!3d41.32459041684288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134fd97c5fbbbcc7%3A0x77f377eae6cd81ee!2sDurr%C3%ABs%2C%20Albania!5e0!3m2!1sen!2s!4v1587395037997!5m2!1sen!2s" 
-        width="600" height="450" margin="center" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+       <p></p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47940.431414313214!2d19.456468618371577!3d41.32459041684288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134fd97c5fbbbcc7%3A0x77f377eae6cd81ee!2sDurr%C3%ABs%2C%20Albania!5e0!3m2!1sen!2s!4v1587395037997!5m2!1sen!2s" 
+        width="600" height="450"  frameborder="0" style="border:0; margin-left: 350px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p><br>
 ​
     <!-- EXERCISE 6: 
             Write a "Leave Email" form. 
@@ -144,12 +164,20 @@ font-size: 20px;
             [OPTIONAL] On submit click, console log the value of the email
         -->
         <form>
-        
-          Enter your email:<input type="email" placeholder="sophie@example.com" style="margin-left:center; margin-top: auto; 
-          margin-right: center;">
-             <input type="button" value="Send email" onclick="">
-
-        </form>
+          <div class="emailBox">
+            <label for="emailAddress">Your e-mail address</label><br>
+            <input id="emailAddress" type="email" size="64" maxLength="64" required
+                   placeholder="username@email.com" pattern=".+@gmail.com"
+                   title="Please provide only your emailAddress">
+          </div>
+         
+          <div class="messageBox">
+            <label for="message">Request</label><br>
+            <textarea id="message" cols="80" rows="8" required
+                      placeholder="My shoes are too tight, and I have forgotten how to dance."></textarea>
+          </div>
+           <input type="submit" value="Send Request">
+         </form>
 ​
     <!-- EXERCISE 7: 
             Create an "book haircut" form.
@@ -163,10 +191,43 @@ font-size: 20px;
             Style it as you like it.
             [OPTIONAL] On submit click, console log an object containing Phone Number, Date and Name.
         -->
+
+
+
+
+
+
 ​
     <!-- EXERCISE 8: 
             Create a table with the price for the services of the barber shop
         -->
+        <table class="table" style="width:60%">
+          <tr>
+            <th>Haircut</th>
+            <th>Price</th>
+            
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>7$</td>
+            
+          </tr>
+          <tr>
+            <td>Modeling Hair</td>
+            <td>10$</td>
+            
+          </tr>
+         <tr>
+
+<td>Full service</td>
+<td>15$</td>
+         </tr>
+        </table>
+
+
+
+
+
 ​
     <!-- EXERCISE 9: 
             Place here a footer including:
