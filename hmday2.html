@@ -1,0 +1,121 @@
+<html>
+    
+  <head>
+      
+    <script>
+          //ex1 
+          //Write a function to change the document title of the page in something else
+     
+                function changeTitle(newTitle){
+               document.title = "Hello ,My new Title";
+                
+    }
+  
+         //ex2
+         //Write a function to change the class of the H1 on a page in "myHeading"
+                   function addClassToHeading() {
+            let x = document.querySelector("div h1")
+          x.classList = 'myHeading';
+           }
+     
+           //ex3
+           //Write a function to change the text of only the p which are child of a div
+      function changePcontent() {
+let change =document.querySelectorAll("div p")
+for(let i=0; i<change.length; i++ ){
+change[i].innerText = "the text has change"
+      
+}
+
+      }
+     //ex4
+     //Write a function to change the destination of every link to https://www.google.com
+
+     
+      function changeUrls() {
+let link = document.querySelector("div a");
+link.href="https://www.google.com"
+      }
+
+     //ex5
+     //Write a function to add a new item ONLY to the second list 
+     function addToTheSecond(content) {
+let list = document.createElement('li')
+list.innerText=content;
+document.querySelector('#secondList').appendChild(list);
+     }
+
+   //ex6
+   //Write a function to add a second paragraph to the div
+      function addParagraph(content) {
+      
+let list = document.createElement('p')
+list.innerText=content;
+document.querySelectorAll('div')[3].appendChild(list);
+      }
+    //ex7
+    //Write a function to make the first UL disappear
+      function firstUlDisappear() {
+document.querySelectorAll('div ul')[1].remove();
+      }
+
+      //ex8
+      // Write a function to make the background of every UL green
+      function paintItGreen() {
+let selectLists = document.querySelectorAll('div ul')
+for(let i=0;i<selectLists.length;i++){
+selectLists[i].style.backgroundColor='green';
+
+}
+
+
+      }
+//ex9
+// Make the heading of the page changing color every time the user clicks on it
+      function makeItClickable(){}
+
+     //ex10
+     //          Create a new welcome alert message when the page successfully loads
+      window.onload = function () {
+alert('hello,welcome to my page');
+
+      }
+
+    </script>​
+    <style>
+      .myHeading {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div  >
+      <h1  >This is the title of the page</h1>
+      <h2>This is the subtitle of the page</h2>
+    </div>
+
+    <div>
+      <hr />​
+      <ul id="firstList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <ul id="secondList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>​
+      <a href="strive.school">This link goes to Strive School</a>
+
+      <div>
+        <p>This text is just for the exercise</p>
+      </div>
+    </div>​
+    <div>
+      <p>And this text is just for the exercise too!</p>
+    </div>
+  </body>
+</html>
