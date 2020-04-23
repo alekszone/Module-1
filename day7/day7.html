@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+​
+<head>
+<!-- EXERCISE 1:
+    Specify the title, the charset (UTF-8) and the viewport of the page.
+    -->
+
+    <title>Welcome to my page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+
+   <style>
+/* EXERCISE 2:  
+       Create a CSS class for the task list with a diverse background
+       Create a CSS class for the task list item with a border, a bold text and a bigger font size
+       Style every button of the page to be bigger
+    */
+
+   
+   #myTaskList{
+background-color: rgb(197, 175, 175);
+}
+
+ input[type=button]{
+     
+    font-size: 12px;
+            width: 150px;
+            height: 50px;  
+           outline:black solid 2px;
+        
+   }
+input[type=text]{
+height:  40px;
+font-size: 20px;
+
+outline: solid green 2px;
+}
+input[type=color]{
+    color:green;
+    font-size: 20px;
+}
+   </style>
+  
+
+</head>
+<body>
+   <h1>Welcome to your personal Task List!</h1>
+   <br />
+
+   <span>You can add any task you like by writing it in the specified field and then press "Add new
+      task"</span><br /><br />
+
+   <input type="text" id="newTask">
+   <input type="button" value="Add new Task" onclick="addNewTask()">
+<!-- //ex3​ 
+ // Create a button "Remove Last Task" to trigger the method "removeLast" -->
+​<input type="button" value="Remove Last Task" onclick="removeLast()">  
+​//ex4
+<!-- Create a button "Remove First Task" to trigger the method "removeFirst"
+ -->
+<input type="button" value="Remove First Task" onclick="removeFirst()">
+ 
+<ul id="myTaskList">
+   </ul>
+
+   <hr />
+
+   <input type="color" placeholder="Color" id="colorPicker">
+   <input type="button" value="Change task background" onclick="changeTaskBackgroundColor()">
+
+   <hr />
+
+   <input type="button" value="Sort" onclick="bubbleSort()" />
+
+   <script>
+       //ex5
+      function addNewTask() {
+    let ul1 = document.createElement("li");
+        document.getElementById("myTaskList").appendChild(ul1);
+        ul1.innerHTML=document.getElementById("newTask").value;        
+        document.getElementById("newTask").value="";
+       }
+//ex6
+//Implement a method "removeLast" which removes the last item from the task list
+function removeLast(){
+   let del = document.querySelectorAll("#myTaskList li").length;
+          let last = document.getElementById("myTaskList")
+ last.removeChild(last.childNodes[del]).value="";
+ 
+}
+
+//ex7
+//Implement a method "removeFirst" which removes the first item from the task list
+function removeFirst(){
+   let dele = document.querySelectorAll("#myTaskList li").length;
+          let first = document.getElementById("myTaskList")
+ first.removeChild(first.childNodes[0]).value="";
+
+
+}
+
+//ex8
+//Implement a method "getTasksAsArray" which returns (and print to the console) an array containing the tasks as string
+function getTasksAsArray(){
+let task = document.querySelector("myTaskList li")
+const array = [];
+if(task.length !=0){
+   array.push(task);
+}else{
+   console.log("not good")
+}
+//for(let i=1; i<task.length; i++){
+
+//}
+return array;
+
+
+}
+
+//ex9
+//Create a method "changeTaskBackgroundColor" which takes the color 
+//from the color picker ad apply it as background to every list item
+
+function changeTaskBackgroundColor(){
+   
+let color = document.createElement('li')
+let text = document.getElementById('myTaskList li').appendChild(color)
+text.innerText=document.getElementById('colorPicker').value;
+document.getElementById("colorPicker").value=""
+
+
+
+}
+
+
+
+   </script>
+
+
+
+
+
+</body>
+
+</html>
